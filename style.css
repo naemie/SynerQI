@@ -381,7 +381,7 @@ header nav a:hover {
 .appointment h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #333;
+    color: #008080;
     margin-bottom: 1rem;
 }
 
@@ -653,4 +653,5 @@ footer::before {
         height: 120px;
         width: auto;
     }
+
 }
