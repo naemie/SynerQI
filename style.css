@@ -540,27 +540,41 @@ footer::before {
 @media (max-width: 800px) {
     header {
         flex-direction: column;
-        gap: 0.5rem;
-        padding: 0.5rem;
+        gap: 1rem;
+        padding: 1rem;
     }
 
-    header nav ul {
-        gap: 3rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
     .hero {
-        padding: 0 1.5rem;
-        min-height: 60vh;
+        padding: 4rem 1.5rem;
+        min-height: auto;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.5rem;
     }
 
     .hero-content h1 {
         font-size: 2.5rem;
     }
 
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px; 
+        padding: 1rem; 
+    }
+
     .intro, .services, .appointment, footer {
         padding: 2.5rem 1.5rem;
+    }
+
+    .card {
+        width: 100%; 
     }
 
     .appointment-form {
