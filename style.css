@@ -1,11 +1,9 @@
-/* --- Dito mapapalitan yung size ng buong page --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* for smooth scrolling to */
 html {
     scroll-behavior: smooth;
 }
@@ -16,35 +14,43 @@ body {
     overflow-x: hidden; 
 }
 
-/* header section to */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
     align-items: center;
-    padding: 1rem 3rem;
-    background-color: #ececec; 
+    background-color: #eee7e7;
     border-bottom: 1px solid #c0c0c0;
-    position: sticky; /* role nito na mag stay yung header sa taas kahit magscroll ka */
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* dito mo mapapalitan yung size ng header logo */
-.logo img {
-    height: 50px;
-    width: auto;
+header .logo {
+    grid-column: 1;
+    padding-left: 3rem;
 }
 
-/* dito mo mapapalitan yung gap ng mga navigation sa header */
+header .logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+header nav {
+    grid-column: 2;
+    justify-self: center;
+}
+
 header nav ul {
     display: flex;
     list-style: none;
     gap: 2.5rem;
 }
 
+
 header nav a {
     text-decoration: none;
-    color: #333333; 
+    color: #333333;
     font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s ease;
@@ -54,8 +60,9 @@ header nav a:hover {
     color: #008080;
 }
 
-/* header button to */
 .cta-button {
+    grid-column: 3;
+    margin-right: 3rem;
     background-color: #008080;
     color: #FFFFFF;
     padding: 0.75rem 1.5rem;
@@ -65,13 +72,20 @@ header nav a:hover {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* animation ng header button kapag hinover mo */
 .cta-button:hover {
     background-color: #006666;
     transform: scale(1.05);
 }
 
-/* ito yung pinaka malaking picture */
+.hamburger-menu {
+    grid-column: 3;
+    display: none;
+    font-size: 2rem;
+    color: #333333;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
 .hero {
     position: relative;
     min-height: 80vh; 
@@ -92,7 +106,7 @@ header nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -103,7 +117,7 @@ header nav a:hover {
 }
 
 .hero-content .subtitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -116,12 +130,12 @@ header nav a:hover {
 
 .hero-buttons {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
 }
 
 .hero-buttons .btn {
-    padding: 0.8rem 3rem;
+    padding: 0.8rem 1.8rem;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
@@ -131,7 +145,7 @@ header nav a:hover {
 }
 
 .hero-buttons .btn-primary {
-    background-color: #00FFFF; 
+    background-color: #00FFFF;
     color: #111111;
     border-color: #00FFFF;
 }
@@ -154,21 +168,21 @@ header nav a:hover {
     transform: translateY(-2px);
 }
 
-/* dito yung mga text */
+/* Intro text section (Ito yung Why SynerQI?) */
 .intro {
-    padding: 3rem 3rem;
-    background-color: #ffffff;
-    color: #333333;
+    padding: 2rem 3rem;
+    background-color: #ffffff; 
+    color: #333333; 
 }
 
 .intro-content {
-    max-width: 1500px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
 .intro-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem; 
     color: #008080; 
     text-align: center;
 }
@@ -185,8 +199,8 @@ header nav a:hover {
 .intro-content p {
     font-size: 1.1rem;
     line-height: 1.7;
-    margin-bottom: 1rem;
-    text-align: left;
+    margin-bottom: 1rem; 
+    text-align: left; 
 }
 
 .intro-content hr {
@@ -199,7 +213,7 @@ header nav a:hover {
 .intro-content .healing-list {
     text-align: left;
     max-width: 700px;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0 0; 
     list-style-position: inside;
 }
 
@@ -208,7 +222,7 @@ header nav a:hover {
     margin-bottom: 0.75rem;
 }
 
-/* dito yung service section */
+/* Services Section */
 .services {
     padding: 4rem 3rem;
     background-color: #ffffff;
@@ -218,50 +232,46 @@ header nav a:hover {
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
-    color: #006666;
+    color: #008080;
     position: relative;
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.5rem; 
 }
 
-/* ito yung line sa taas ng 'Medical Treatments & Charges' */
 .services h2::before {
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1500px; 
+    width: 80%;
+    max-width: 800px; 
     height: 1px;
     background-color: #e0e0e0;
 }
 
-/* ito yung line sa baba ng 'Medical Treatments & Charges' */
 .services h2::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 0; 
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1500px; 
+    width: 80%;
+    max-width: 800px; 
     height: 1px;
     background-color: #e0e0e0;
 }
 
-
 .services-category {
     font-size: 2rem; 
-    color: #006666;
-    margin: 4rem 0 2.5rem 0;
+    color: #008080;
+    margin: 4rem 0 2.5rem 0; 
     position: relative;
     text-align: center;
     padding-top: 2.5rem; 
-    padding-bottom: 2.5rem;
+    padding-bottom: 2.5rem; 
     flex-basis: 100%;
 }
-
 
 .services-category::before {
     content: '';
@@ -269,8 +279,8 @@ header nav a:hover {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1500px; 
+    width: 80%;
+    max-width: 800px; 
     height: 1px;
     background-color: #e0e0e0;
 }
@@ -278,11 +288,11 @@ header nav a:hover {
 .services-category::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 0; 
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
-    max-width: 1500px; 
+    width: 80%;
+    max-width: 800px; 
     height: 1px;
     background-color: #e0e0e0;
 }
@@ -292,12 +302,12 @@ header nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .card {
-    width: 370px;
+    width: 320px;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -314,7 +324,7 @@ header nav a:hover {
 
 .card img {
     width: 100%;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -340,8 +350,8 @@ header nav a:hover {
 }
 
 .card.card-text-only:hover {
-    transform: translateY(2); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transform: translateY(1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
 }
 
 .card-text-only .card-content h3 {
@@ -362,6 +372,7 @@ header nav a:hover {
     margin-bottom: 0.5rem;
 }
 
+/* Appointment Form Section to */
 .appointment {
     padding: 4rem 3rem;
     background-color: #f9f9f9;
@@ -370,7 +381,7 @@ header nav a:hover {
 .appointment h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: #008080;
+    color: #333;
     margin-bottom: 1rem;
 }
 
@@ -401,7 +412,7 @@ header nav a:hover {
 .appointment-form label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #008080;
+    color: #444;
     margin-bottom: 0.5rem;
 }
 
@@ -429,7 +440,7 @@ header nav a:hover {
 
 .btn-submit {
     grid-column: 1 / -1;
-    justify-self: center;
+    justify-self: center; 
     width: 250px;
     padding: 1rem;
     font-size: 1.1rem;
@@ -446,9 +457,9 @@ header nav a:hover {
     background-color: #006666;
 }
 
-/* footer section to */
+/* foooter section to */
 footer {
-    position: relative;
+    position: relative; 
     padding: 4rem 3rem;
     background-image: url('images/footer\ bg.png');
     background-size: cover;
@@ -457,7 +468,6 @@ footer {
     z-index: 1; 
 }
 
-/* overlay to para mahighlight yung mga text */
 footer::before {
     content: '';
     position: absolute;
@@ -466,7 +476,7 @@ footer::before {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+    z-index: -1; 
 }
 
 .footer-content {
@@ -483,10 +493,8 @@ footer::before {
     min-width: 250px;
 }
 
-/* dito mo maeedit yung laki ng footer logo */
 .footer-column .logo img {
-    height: 150px;
-    filter: brightness(0) invert(1);
+    height: 120px;
 }
 
 .footer-column h4 {
@@ -508,9 +516,8 @@ footer::before {
     text-decoration: underline;
 }
 
-/* Scroll to Top design to*/
 #scrollToTopBtn {
-    display: none;
+    display: none; 
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -525,7 +532,7 @@ footer::before {
     width: 50px;
     height: 50px;
     font-size: 24px;
-    line-height: 50px;
+    line-height: 50px; 
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -536,16 +543,67 @@ footer::before {
     transform: scale(1.1);
 }
 
-
 @media (max-width: 800px) {
     header {
-        flex-direction: column;
-        gap: 1rem;
+        grid-template-columns: auto 1fr;
+    }
+
+    header .logo {
+        grid-column: 1;
+        padding-left: 1rem;
+    }
+
+    .hamburger-menu {
+        display: block; 
+        grid-column: 2;
+        justify-self: end;
+        padding-right: 1rem;
+    }
+
+    .cta-button {
+        margin-right: 0;
+    }
+
+    #mainNav {
+        display: none; 
+        grid-column: 1 / -1;
+        order: 3; 
+        background-color: #D9D9D9;
+        width: 100%;
+    }
+    
+    #ctaButton {
+        display: none; 
+        grid-column: 1 / -1;
+        order: 4; 
+        background-color: #008080;
+        color: #FFFFFF;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
         padding: 1rem;
+        border-radius: 0; 
+        border-top: 1px solid #c0c0c0;
+    }
+
+    #mainNav.open { display: block; }
+    #ctaButton.open { display: block; }
+
+    header nav ul {
+        flex-direction: column; 
+        text-align: center;
+        width: 100%;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    header nav li {
+        padding: 1rem 0;
+        border-top: 1px solid #c0c0c0;
     }
 
     .hero {
-        padding: 4rem 1.5rem;
+        padding: 4rem 1.5rem; 
         min-height: auto;
     }
 
@@ -554,19 +612,19 @@ footer::before {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; 
     }
 
     .hero-buttons {
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center;
         gap: 1rem;
     }
 
     .hero-buttons .btn {
         width: 100%;
-        max-width: 300px; 
-        padding: 1rem; 
+        max-width: 300px;
+        padding: 1rem;
     }
 
     .intro, .services, .appointment, footer {
@@ -574,10 +632,25 @@ footer::before {
     }
 
     .card {
-        width: 100%; 
+        width: 90%; 
+        max-width: 350px;
     }
 
     .appointment-form {
         grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column; 
+    }
+
+    .footer-column {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-column .logo img {
+        height: 120px;
+        width: auto;
     }
 }
