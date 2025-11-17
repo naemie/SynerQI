@@ -10,10 +10,10 @@
 
     <header>
         <div class="logo">
-            
             <img src="images/synerqi header logo.png" alt="SynerQi Logo">
         </div>
-        <nav>
+        
+        <nav id="mainNav">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -21,7 +21,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="#appointment" class="cta-button">Book Appointment</a>
+        
+        <a href="#appointment" class="cta-button" id="ctaButton">Book Appointment</a>
+        
+        <div class="hamburger-menu" id="hamburgerMenu">
+    &#9776;
+</div>
     </header>
 
     <main>
@@ -87,7 +92,7 @@
 
                 <!-- Card 2 -->
                 <div class="card">
-                    <img src="images/Herbal-Remedies-850x567 (1).jpg    " alt="Herbal Remedies">
+                    <img src="images/Herbal-Remedies-850x567 (1).jpg" alt="Herbal Remedies">
                     <div class="card-content">
                         <h3>Herbal Remedies - P200-P300/day</h3>
                         <p>Prescription of Herbs (Powder/Capsules) <br> <br> Traditional Chinese medicine prescription of herbs (powder/capsules) are customized to individual. Easy & convenient to prepare and consume. With GMP certified standard.</p>
@@ -298,6 +303,12 @@
 
         scrollToTopButton.onclick = function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        <!-- Scroll to Top Button (javascript section) -->
+
+        document.getElementById('hamburgerMenu').onclick = function() {
+            document.getElementById('mainNav').classList.toggle('open');
+            document.getElementById('ctaButton').classList.toggle('open');
         }
     </script>
 
