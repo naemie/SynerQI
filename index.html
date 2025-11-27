@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- header section -->
     <header>
         <div class="logo">
             <img src="images/synerqi header logo.png" alt="SynerQi Logo">
@@ -16,23 +17,24 @@
         <nav id="mainNav">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         
+        <!-- header 'book appointment' button po ito -->
         <a href="#appointment" class="cta-button" id="ctaButton">Book Appointment</a>
         
+        <!-- hamburger icon po ito -->
         <div class="hamburger-menu" id="hamburgerMenu">
-    &#9776;
-</div>
+            &#9776; 
+        </div>
     </header>
 
     <main>
-        <!-- dito yung hero section (yung unang makikita na malaking image)-->
         <section class="hero" id="home">
-            <div class="hero-content">
+            <div class="hero-content fade-in">
                 <p class="subtitle">Feel better the natural way!</p>
                 <h1>SE TCM Hub Traditional<br>Chinese Medicine<br>Healing</h1>
                 <div class="hero-buttons">
@@ -42,28 +44,21 @@
             </div>
         </section>
 
-        <!-- Dito mags-start yung information -->
-        <section class="intro" id="about">
+        <section class="intro fade-in" id="about">
             <div class="intro-content">
                 <h2>Why SynerQi?</h2>
-                
-                
                 <h3>Caring for your health</h3>
                 <p>SynerQi Integrated Health Solutions provides holistic and genuinely healing health care based on our wealth of experience in Traditional Chinese Medicine research and treatment.</p>
                 <p>We believe in a holistic, safe approach in natural healing and preventive medicine, based on established practice.</p>
                 <p>Our team of professional TCM physicians and Certified Acupuncturists integrate Eastern and Western methodologies to provide effective treatment and provide holistic wellness.</p>
                 <p>We are specialise in stroke recovery, injury or operation recovery, pain and numbness management, post-natal women's health.</p>
                 <p>We practice an established, holistic, safe approach in natural healing and preventive medicine.</p>
-
                 <hr>
-
                 <h3>SynerQi</h3>
                 <p>At SynerQi, we integrate Traditional Chinese Medicine with modern western medicine and Structural therapy.</p>
                 <p>Traditional Chinese natural herbal treatment, and also Tuina (Chinese massage), acupuncture, cupping, skin scraping (Guasha), Chinese medicine fumigation, Chinese medicine permeation with Structural therapy to enhance the normal function of qi and blood, the balance of Ying and Yang, improve immunity and treatment ailments for holistic health improvements.</p>
                 <p>TCM Acupuncture with Myofascial release therapy has a good effect on treating cervical spondylosis, lumbar disc protrusion, sciatica, arthritis, sequelae of stroke, acute lumbar muscle sprain, chronic lumbar muscle strain, chronic fatigue syndrome, overweight, headache, dizziness, tinnitus, insomnia, facial paralysis, stiff neck etc. Our Physicians and physiotherapists are professionally trained to provide rehabilitation and physiotherapy treatment (physical therapy) to adjust blood circulation, improve nutrition and metabolism, enhance immunity, and regulating the function of the nervous system.</p>
-
                 <hr>
-                
                 <h3>Natural Healing</h3>
                 <ul class="healing-list">
                     <li>Stimulates the body's natural healing process</li>
@@ -76,94 +71,111 @@
             </div>
         </section>
 
-        <!-- Dito yung mga section ng cards -->
-        <section class="services" id="services">
+        <section class="services fade-in" id="services">
             <h2>Medical Treatments & Charges</h2>
             <div class="cards-container">
-                
                 <!-- Card 1 -->
                 <div class="card">
                     <img src="images/tcm-850x567 (1).jpg" alt="TCM Consultation">
                     <div class="card-content">
-                        <h3>Consultation - P1000</h3>
-                        <p>Basic TCM Diagnose (Pulsing & Diagnose) <br> <br> Traditional Chinese Medicine TCM Diagnose involves Observation, Hearing & Smelling, Inquiring and Pulsing Methods.</p>
+                        <h3>Consultation <br>(₱1000)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Basic TCM Diagnose (Pulsing & Diagnose) <br> <br> Traditional Chinese Medicine TCM Diagnose involves Observation, Hearing & Smelling, Inquiring and Pulsing Methods.</p>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Card 2 -->
                 <div class="card">
                     <img src="images/Herbal-Remedies-850x567 (1).jpg" alt="Herbal Remedies">
                     <div class="card-content">
-                        <h3>Herbal Remedies - P200-P300/day</h3>
-                        <p>Prescription of Herbs (Powder/Capsules) <br> <br> Traditional Chinese medicine prescription of herbs (powder/capsules) are customized to individual. Easy & convenient to prepare and consume. With GMP certified standard.</p>
+                        <h3>Herbal Remedies <br>(₱200-₱300/day)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Prescription of Herbs (Powder/Capsules) <br> <br> Traditional Chinese medicine prescription of herbs (powder/capsules) are customized to individual. Easy & convenient to prepare and consume. With GMP certified standard.</p>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Card 3 -->
                 <div class="card">
                     <img src="images/Acupuncture-850x567.jpeg" alt="Acupuncture">
                     <div class="card-content">
-                        <h3>Acupuncture - P1500+</h3>
-                        <p>Promotes Meridian channel flow <br> <br> Acupuncture promotes Meridian channel flow, balance qi and replenish qi of the body through the natural way, its effect has been recognized by WHO. Best for acute and chronic pain, also great remedy for internal medicines.</p>
+                        <h3>Acupuncture <br>(₱1500+)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Promotes Meridian channel flow <br> <br> Acupuncture promotes Meridian channel flow, balance qi and replenish qi of the body through the natural way, its effect has been recognized by WHO. Best for acute and chronic pain, also great remedy for internal medicines.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Category Title -->
                 <h3 class="services-category">TCM Modalities</h3>
 
                 <!-- Card 4 -->
                 <div class="card">
                     <img src="images/Cupping-850x567.jpg" alt="Cupping Therapy">
                     <div class="card-content">
-                        <h3>Cupping - P1000</h3>
-                        <p>Detox/Slimming/Pain Management <br> <br> Traditional Chinese medicine way of Detox / Slimming / Pain Management. Relaxing taut muscles by expelling wind and heat of the body. Promotes circulation and reduce pain.</p>
+                        <h3>Cupping <br>(₱1000)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Detox/Slimming/Pain Management <br> <br> Traditional Chinese medicine way of Detox / Slimming / Pain Management. Relaxing taut muscles by expelling wind and heat of the body. Promotes circulation and reduce pain.</p>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Card 5 -->
                 <div class="card">
                     <img src="images/tuina.jpg" alt="Tuina Massage">
                     <div class="card-content">
-                        <h3>Tuina (60/90mins) - P1000/P1500</h3>
-                        <p>Meridian Acupressure Points Massage <br> <br> Meridian Acupressure Points Massage is the most effective way to de-stress the mucles and mind, thus promotes better sleep! Acupuncture points are being stimulated which helps qi flows better, thus bring better circulation of blood and strengthen mind and body.</p>
+                        <h3>Tuina (60/90mins) <br>(₱1000/₱1500)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Meridian Acupressure Points Massage <br> <br> Meridian Acupressure Points Massage is the most effective way to de-stress the mucles and mind, thus promotes better sleep! Acupuncture points are being stimulated which helps qi flows better, thus bring better circulation of blood and strengthen mind and body.</p>
+                        </div>
                     </div>
                 </div>
-
                 <div class="card">
                     <img src="images/guasha.jpg" alt="Guasha">
                     <div class="card-content">
-                        <h3>Guasha - P1200</h3>
-                        <p>Body Detox / Facial Lifting Guasha <br> <br> Traditional Chinese medicine Body Detox Guasha is for detoxing and promoting lymphatic drainage. Facial lifting Guasha is able to detox and promote elasticity of face muscles, create lifting effect, reduce wrinkles and enhance radiance.</p>
+                        <h3>Guasha <br>(₱1200)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Body Detox / Facial Lifting Guasha <br> <br> Traditional Chinese medicine Body Detox Guasha is for detoxing and promoting lymphatic drainage. Facial lifting Guasha is able to detox and promote elasticity of face muscles, create lifting effect, reduce wrinkles and enhance radiance.</p>
+                        </div>
                     </div>
                 </div>
 
-                
                 <h3 class="services-category">Rehabilitation by Professional Acupuncturist and Therapist</h3>
 
                 <!-- Card 6 -->
                 <div class="card">
                     <img src="images/rehab.jpeg" alt="Rehabilitation">
                     <div class="card-content">
-                        <h3>Rehabilitation - P1000</h3>
-                        <p>Our Active Approach’ incorporates tailored, progressive exercise programs, to patient management sets us apart and enhances positive outcomes for our patients.</p>
+                        <h3>Rehabilitation <br>(₱1000)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Our Active Approach’ incorporates tailored, progressive exercise programs, to patient management sets us apart and enhances positive outcomes for our patients.</p>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Card 7 -->
                 <div class="card">
                     <img src="images/Pain Management.jpg" alt="3D Acu & Myofascial Pain Management">
                     <div class="card-content">
-                        <h3>3D Acu & Myofascial Pain Management - P4000 to P7500</h3>
-                        <p>Dr Kim Ki Ho from Korea is a specialist in 3D structure Myofascial Chain Rehab therapy, this includes the combination of acupuncture and manual therapies remedies to restore, improve or maintain the movement and functioning of the human body for better mobility, coordination and pain management.</p>
+                        <h3>3D Acu & Myofascial Pain Management <br>(₱4000 to ₱7500)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Dr Kim Ki Ho from Korea is a specialist in 3D structure Myofascial Chain Rehab therapy, this includes the combination of acupuncture and manual therapies remedies to restore, improve or maintain the movement and functioning of the human body for better mobility, coordination and pain management.</p>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Card 8 -->
                 <div class="card">
                     <img src="images/Physical-Exercise.jpeg" alt="Physical Exercise">
                     <div class="card-content">
-                        <h3>Physical Exercise - P600-P800</h3>
-                        <p>Our Physical Exercise Therapy helps to restore the optimal function to people with injuries to the muscles, bones, tissues or nervous system, including those with stroke to enhance and restore their functional ability and quality of life.</p>
+                        <h3>Physical Exercise <br>(₱600-₱800)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Our Physical Exercise Therapy helps to restore the optimal function to people with injuries to the muscles, bones, tissues or nervous system, including those with stroke to enhance and restore their functional ability and quality of life.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -171,55 +183,54 @@
 
                 <!-- Card 9 -->
                 <div class="card">
-                    <img src="images/Pain Management.jpg" alt="Pain Management">
-                    <div class="card-content">
-                        <h3>3D Acu & Myofascial Pain Management - P4000 to P7500</h3>
-                        <p>Dr Kim Ki Ho from Korea is a specialist in 3D structure Myofascial Chain Rehab therapy, this includes the combination of acupuncture and manual therapies remedies to restore, improve or maintain the movement and functioning of the human body for better mobility, coordination and pain management.</p>
-                    </div>
-                </div>
-
-                <!-- Card 10 -->
-                <div class="card">
                     <img src="images/Acupuncture-850x567.jpeg" alt="Acupuncture">
                     <div class="card-content">
                         <h3>Acupuncture</h3>
-                        <p>The efficacy of Acupuncture treatment can provide pain relief but also the improvement of blood circulation for achieving overall balance of your physical condition.</p>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>The efficacy of Acupuncture treatment can provide pain relief but also the improvement of blood circulation for achieving overall balance of your physical condition.</p>
+                        </div>
                     </div>
                 </div>
-
+                <!-- Card 10 -->
+                <div class="card">
+                    <img src="images/Pain Management.jpg" alt="Pain Management">
+                    <div class="card-content">
+                        <h3>3D Acu & Myofascial Pain Management <br>(₱4000 to ₱7500)</h3>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Dr Kim Ki Ho from Korea is a specialist in 3D structure Myofascial Chain Rehab therapy, this includes the combination of acupuncture and manual therapies remedies to restore, improve or maintain the movement and functioning of the human body for better mobility, coordination and pain management.</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Card 11 -->
                 <div class="card">
                     <img src="images/guasha.jpg" alt="Cupping or Guasha">
                     <div class="card-content">
                         <h3>Cupping or Guasha</h3>
-                        <p>Guasha can be effective for resolving pain symptoms and freeing up mobility for frozen shoulder. It can also be use to treat emerging inflammatory condition such as flulike symptoms or bronchial and respiratory illnesses.</p>
+                        <button class="view-info-btn">View More Info</button>
+                        <div class="hidden-desc">
+                            <p>Guasha can be effective for resolving pain symptoms and freeing up mobility for frozen shoulder. It can also be use to treat emerging inflammatory condition such as flulike symptoms or bronchial and respiratory illnesses.</p>
+                        </div>
                     </div>
                 </div>
 
                 <h3 class="services-category">Other specialized treatments</h3>
 
-                <!-- Card 12 (text lang xa)-->
+                <!-- Card 12 -->
                 <div class="card card-text-only">
                     <div class="card-content">
                         <h3>Women's Health</h3>
-                        <ul>
-                            <li>Fertility Acupuncture</li>
-                            <li>Menopause Program</li>
-                            <li>Post Natal Pelvic Realignment & Slimming</li>
-                            <li>TCM Pediatrics</li>
-                        </ul>
+                        <p>Fertility Acupuncture <br>Menopause Program <br> Post Natal Pelvic Realignment & Slimming <br>TCM Pediatrics</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- Dito yung Appointment Form Section -->
-        <section class="appointment" id="appointment">
+        <section class="appointment fade-in" id="appointment">
             <h2>APPOINTMENT FORM</h2>
             <p class="form-subtitle">Please fill in the form below to schedule an appointment.</p>
-            
-            <form action="#" method="POST" class="appointment-form">
+            <form action="#" method="POST" class="appointment-form" id="appointmentForm">
                 <div class="form-group">
                     <label for="first-name">First name</label>
                     <input type="text" id="first-name" name="first-name" placeholder="First name" required>
@@ -248,28 +259,24 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Tell us about your symptoms..."></textarea>
                 </div>
-                
                 <button type="submit" class="btn-submit">SCHEDULE</button>
             </form>
         </section>
-
     </main>
 
-    <!-- Footer to -->
-    <footer id="contact">
+    <footer id="contact" class="fade-in">
         <div class="footer-content">
             <div class="footer-column">
                 <div class="logo">
                     <img src="images/synerqi footer logo.png" alt="SynerQi Logo">
                 </div>
             </div>
-
             <div class="footer-column">
                 <h4>Location</h4>
                 <p>
-                    804 City and Land Megaplaza, Garnet Rd.<br>
-                    cor. ADB Avenue. Ortigas Center, Pasig City,<br>
-                    Metro Manila, Philippines
+                    604 City and Land Megaplaza, Garnet Rd. <br>
+                    cor. ADB Avenue, Ortigas Center, Pasig City, 
+                    <br>Metro Manila, Philippines
                 </p>
             </div>
             <div class="footer-column">
@@ -279,20 +286,29 @@
                     <a href="mailto:soearth.tcm@gmail.com">soearth.tcm@gmail.com</a>
                 </p>
             </div>
-
-            
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (javascript section) -->
+    <!-- Ito yung structure ng pop up kapag clinick mo yung card sa services -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Service Image" style="display: none;">
+                <h3 id="modalTitle"></h3>
+                <div id="modalDesc"></div>
+                <!-- Book Appointment Button sa Pop Up -->
+                <a href="#appointment" class="cta-button modal-btn">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+
     <button id="scrollToTopBtn" title="Go to top">&uarr;</button>
+    
     <script>
+        // Scroll to top (ito yung button na nag a-appear sa bottom right kapag nag scroll ka)
         let scrollToTopButton = document.getElementById("scrollToTopBtn");
-
-        window.onscroll = function() {
-            scrollFunction();
-        };
-
+        window.onscroll = function() { scrollFunction(); };
         function scrollFunction() {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 scrollToTopButton.style.display = "block";
@@ -300,16 +316,102 @@
                 scrollToTopButton.style.display = "none";
             }
         }
-
         scrollToTopButton.onclick = function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        <!-- Scroll to Top Button (javascript section) -->
 
+        // Hamburger menu 
         document.getElementById('hamburgerMenu').onclick = function() {
-            document.getElementById('mainNav').classList.toggle('open');
-            document.getElementById('ctaButton').classList.toggle('open');
+        document.getElementById('mainNav').classList.toggle('open');
+        document.getElementById('ctaButton').classList.toggle('open');
+    };
+    //  Smooth scrolling for mobile
+        document.querySelectorAll('#mainNav a, #ctaButton').forEach(item => {
+        item.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (!targetId || !targetId.startsWith('#')) return;
+        e.preventDefault();
+        const targetEl = document.querySelector(targetId);
+        document.getElementById('mainNav').classList.remove('open');
+        document.getElementById('ctaButton').classList.remove('open');
+        setTimeout(() => {
+        if (targetEl) {
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const top = targetEl.offsetTop - headerHeight;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+        history.pushState(null, '', targetId);
+      }
+    }, 10);
+  });
+});
+
+
+
+        // Service pop up
+        const modal = document.getElementById("serviceModal");
+        const modalImg = document.getElementById("modalImg");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDesc = document.getElementById("modalDesc");
+        const closeBtn = document.querySelector(".close-btn");
+        const modalBtn = document.querySelector(".modal-btn");
+        const cards = document.querySelectorAll(".card:not(.card-text-only)");
+
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+                const img = card.querySelector("img"); 
+                const h3 = card.querySelector("h3");
+                const hiddenDesc = card.querySelector(".hidden-desc");
+                
+                if (img) {
+                    modalImg.src = img.src;
+                    modalImg.style.display = "block"; 
+                } else {
+                    modalImg.style.display = "none"; 
+                }
+                
+                if (h3) {
+                    modalTitle.innerText = h3.innerText;
+                }
+
+                if (hiddenDesc) {
+                    modalDesc.innerHTML = hiddenDesc.innerHTML;
+                }
+
+                modal.style.display = "flex";
+            });
+        });
+
+        // exit button for pop up
+        if (modalBtn) modalBtn.onclick = function() { modal.style.display = "none"; }
+        if (closeBtn) closeBtn.onclick = function() { modal.style.display = "none"; }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
+
+        // Fade in animation accrosss the website
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 80) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', fadeInOnScroll);
+        fadeInOnScroll();
+
+        // ito lalabas kapag tapos na magfill up ng form. Wala pang mangyayari na kung anek anek since wala naman tayong database.
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Appointment Scheduled! We will contact you soon.');
+            this.reset();
+        });
     </script>
 
 </body>
