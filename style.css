@@ -722,7 +722,7 @@ footer::before {
         overflow: hidden;
         grid-column: 1 / -1; 
         order: 3; 
-        background-color: #D9D9D9;
+        background-color: #E8F4F2;
         width: 100%; 
         transition: max-height 0.4s ease-out;
     }
@@ -826,6 +826,7 @@ footer::before {
         width: auto;
     }
 }
+
 
 
 
