@@ -171,9 +171,9 @@ header nav a:hover {
 }
 
 .hero-buttons .btn-primary {
-    background-color: #00FFFF; 
-    color: #111111; 
-    border-color: #00FFFF;
+    background-color: #008080; 
+    color: #ffffff; 
+    border-color: #039f9f;
 }
 
 .hero-buttons .btn-primary:hover {
@@ -826,6 +826,7 @@ footer::before {
         width: auto;
     }
 }
+
 
 
 
