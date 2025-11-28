@@ -724,7 +724,7 @@ footer::before {
         order: 3; 
         background-color: #E8F4F2;
         width: 100%; 
-        transition: max-height 0.4s ease-out;
+        transition: max-height 0.7s ease-out;
     }
     
     #ctaButton {
@@ -826,6 +826,7 @@ footer::before {
         width: auto;
     }
 }
+
 
 
 
