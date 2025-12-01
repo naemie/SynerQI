@@ -340,6 +340,14 @@
 }
 
 .method-section { padding: 4rem 2rem; background: white; }
+
+.method-section .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .method-grid {
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
@@ -365,7 +373,6 @@
 .modalities-summary p { opacity: 0.95; font-size: 1.15rem; font-style: italic; }
 
 
-/*Responsive*/
 @media (max-width: 900px) {
     .about-hero { height: 60vh; }
     .hero-text-content h1 { font-size: 2.8rem; }
@@ -393,12 +400,29 @@
         padding: 4rem 1.5rem; 
         grid-template-columns: 1fr;
         gap: 2rem;
+        text-align: center; 
+    }
+
+    .feature-content { 
+        padding: 0; 
+        text-align: center; 
+    }
+    .feature-content h2, .feature-content .text-gold {
+        text-align: center;
+    }
+
+    .feature-list {
+        display: inline-block; 
+        text-align: left;
     }
     
-    .founder-grid, .method-grid { grid-template-columns: 1fr; }
+    .founder-grid, .method-grid { 
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+    
     .founder-img-main { height: 350px; }
     
-    .feature-content { padding: 0; }
     .feature-image { height: 300px; width: 100%; max-width: 100%; order: -1; }
     .feature-row:nth-child(even) .feature-image { order: -1; }
     
@@ -407,5 +431,9 @@
         padding: 10px 20px;
     }
     
+    .method-card {
+        text-align: center;
+    }
+
     .modalities-summary { padding: 2rem 1.5rem; margin-top: 3rem; }
 }
