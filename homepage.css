@@ -1,4 +1,4 @@
-/*  Typography */
+/* Typography */
 h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 p, button, a, input, select { font-family: 'Poppins', sans-serif; }
 
@@ -111,6 +111,8 @@ p, button, a, input, select { font-family: 'Poppins', sans-serif; }
     .hero-actions { flex-direction: column; width: 100%; }
     .btn { width: 100%; text-align: center; }
 
+    /* Values Section Centering */
+    .values-section .container { text-align: center; } /* ADDED */
     .values-grid { flex-direction: column; gap: 3rem; }
     .v-divider { display: none; }
     .value-item { width: 100%; border-bottom: 1px solid #eee; padding-bottom: 2rem; }
@@ -123,6 +125,7 @@ p, button, a, input, select { font-family: 'Poppins', sans-serif; }
         flex-direction: column; 
         align-items: center; 
         gap: 2rem; 
+        text-align: center; /* ADDED */
     }
     
     .split-image {
@@ -159,7 +162,10 @@ p, button, a, input, select { font-family: 'Poppins', sans-serif; }
     .floating-badge .material-icons-round { font-size: 1.8rem; }
     .floating-badge p { font-size: 0.9rem; }
 
+    /* Featured Services Centering */
+    .featured-services .container { text-align: center; } /* ADDED */
     .section-header-row { flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
+    .featured-grid { grid-template-columns: 1fr; } /* Force single column on small mobile */
 }
 
 /* Quick Navigation Sticky Bar */
