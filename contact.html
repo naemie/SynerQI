@@ -17,7 +17,6 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <div class="logo">
             <a href="index.html">
@@ -42,7 +41,6 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="contact-hero">
             <div class="container">
                 <h1>Get in Touch</h1>
@@ -75,7 +73,6 @@
             </div>
         </div>
 
-        <!-- Map & Location Section -->
         <section class="map-section fade-in">
             <div class="map-layout">
                 <div class="location-info">
@@ -106,7 +103,6 @@
                     <button class="cta-button" onclick="openGeneralModal()" style="margin-top: 1rem; width: auto; display: inline-block;">Request Appointment</button>
                 </div>
 
-                <!-- gugel map -->
                 <div class="map-container-large">
                     <iframe 
                         src="https://maps.google.com/maps?q=604%20City%20and%20Land%20Megaplaza%2C%20Garnet%20Rd.%20cor.%20ADB%20Avenue%2C%20Ortigas%20Center%2C%20Pasig%20City%2C%20Metro%20Manila&t=&z=16&ie=UTF8&iwloc=&output=embed" 
@@ -118,7 +114,6 @@
             </div>
         </section>
 
-        <!-- Book Appointment-->
         <section class="appointment-banner fade-in">
             <div class="appointment-content">
                 <h2>Book for an appointment today!</h2>
@@ -137,7 +132,6 @@
 
     <footer id="contact" class="fade-in">
         <div class="footer-content">
-            <!-- Socials -->
             <div class="footer-column">
                 <div class="logo">
                     <img src="images/synerqi footer logo.png" alt="SynerQi Logo">
@@ -148,7 +142,6 @@
                 </div>
             </div>
 
-            <!-- Navigation -->
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
@@ -189,7 +182,6 @@
         <span class="material-icons-round">arrow_upward</span>
     </button>
 
-    <!-- Popup -->
     <div id="bookingModal" class="modal-overlay">
         <div class="modal-wrapper">
             <div class="mobile-modal-header">
@@ -258,13 +250,11 @@
     </div>
 
     <script>
-        // Hamburger Menu 
         document.getElementById('hamburgerMenu').onclick = function() {
             document.getElementById('mainNav').classList.toggle('open');
             document.getElementById('ctaButton').classList.toggle('open');
         }
 
-        // Fade In Animation 
         const fadeElements = document.querySelectorAll('.fade-in');
         const fadeInOnScroll = () => {
             fadeElements.forEach(element => {
@@ -278,7 +268,6 @@
         window.addEventListener('scroll', fadeInOnScroll);
         fadeInOnScroll(); 
 
-        // pop up
         const modal = document.getElementById('bookingModal');
         const modalImg = document.getElementById('modalImg');
         const modalTitle = document.getElementById('modalTitle');
@@ -288,7 +277,6 @@
         const today = new Date().toISOString().split('T')[0];
         dateInput.setAttribute('min', today);
 
-        // scrollbar width
         function getScrollbarWidth() {
             return window.innerWidth - document.documentElement.clientWidth;
         }
@@ -321,7 +309,6 @@
 
         modal.addEventListener('click', e => { if(e.target === modal) closeModal(); });
         
-        // Form Submission
         document.getElementById('modalBookingForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const service = document.getElementById('serviceSelect').value;
@@ -332,7 +319,6 @@
             closeModal();
         });
 
-        //Scroll To Top 
         const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
         window.addEventListener("scroll", () => {
