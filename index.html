@@ -52,7 +52,6 @@
             </div>
         </section>
 
-        <!-- Quick Navigation Sticky Bar-->
         <div class="quick-nav-container">
             <nav class="quick-nav">
                 <a href="#values">Values</a>
@@ -299,7 +298,6 @@
         };
         scrollToTopButton.onclick = function() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
-        // MOBILE MENU 
         const hamburgerBtn = document.getElementById('hamburgerMenu');
         const hamburgerIcon = document.getElementById('hamburgerIcon');
         const mainNav = document.getElementById('mainNav');
@@ -342,8 +340,7 @@
                 closeMenu();
             }
         });
-        
-        // Close menu when a link is clicked
+
         const navLinks = mainNav.querySelectorAll('a');
         navLinks.forEach(link => {
             link.addEventListener('click', closeMenu);
@@ -413,5 +410,4 @@
     </script>
 </body>
 </html>
-
 
