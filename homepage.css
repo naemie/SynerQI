@@ -1,8 +1,6 @@
-/* Typography */
 h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 p, button, a, input, select { font-family: 'Poppins', sans-serif; }
 
-/* Hero Section */
 .hero {
     position: relative; min-height: 90vh; 
     background-image: url('images/hero-image-01.jpg'); 
@@ -31,7 +29,6 @@ p, button, a, input, select { font-family: 'Poppins', sans-serif; }
     font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; font-weight: 300;
 }
 
-/* DIVIDER */
 .hero-divider {
     height: 3px; width: 80px; background: #008080; margin: 0 auto 2.5rem auto; border-radius: 2px;
 }
