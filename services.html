@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treatments - SynerQi</title>
+    <title>Contact Us - SynerQi</title>
+    <meta name="description" content="Contact SynerQi TCM Clinic in Ortigas, Pasig. Book your acupuncture, cupping, or consultation appointment today. Call 0995 046 1097.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="contact.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <div class="logo">
             <a href="index.html">
@@ -25,8 +29,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html" class="active-page">Treatments</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Treatments</a></li>
+                <li><a href="contact.html" class="active-page">Contact</a></li>
             </ul>
         </nav>
         
@@ -38,285 +42,102 @@
     </header>
 
     <main>
-        <section class="service-header">
-            <h1>Our Treatments</h1>
-            <p>Effective, natural healing tailored to you.</p>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p>We are here to help you achieve optimal wellness. Reach out to us today.</p>
+            </div>
         </section>
 
-        <div class="control-bar-wrapper">
-            <div class="control-bar" id="controlBar">
-                <div class="search-container">
-                    <span class="material-icons-round search-icon">search</span>
-                    <input type="text" id="serviceSearch" placeholder="Search symptoms, treatments..." aria-label="Search services">
+        <div class="contact-wrapper fade-in">
+            <div class="contact-grid">
+                <a href="tel:09950461097" class="contact-card" aria-label="Call SynerQi at 0995 046 1097">
+                    <div class="card-icon"><span class="material-icons-round">phone_in_talk</span></div>
+                    <h3>Call Us</h3>
+                    <p>For immediate appointments</p>
+                    <span class="contact-link-text">0995 046 1097<br>0931 129 7716</span>
+                </a>
+
+                <a href="mailto:emantablizo520@gmail.com" class="contact-card" aria-label="Email SynerQi">
+                    <div class="card-icon"><span class="material-icons-round">email</span></div>
+                    <h3>Email Us</h3>
+                    <p>Send us a message anytime</p>
+                    <span class="contact-link-text">sien-inquiry@sientcm.com<br>soearth.tcm@gmail.com</span>
+                </a>
+
+                <a href="viber://chat?number=%2B6590718644" class="contact-card" aria-label="Chat with SynerQi on Viber">
+                    <div class="card-icon"><span class="material-icons-round">chat</span></div>
+                    <h3>Viber Us</h3>
+                    <p>Connect with us on Viber</p>
+                    <span class="contact-link-text">+65 907 18644</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Map & Location Section -->
+        <section class="map-section fade-in">
+            <div class="map-layout">
+                <div class="location-info">
+                    <h2>Visit Our Clinic</h2>
+                    <p style="margin-bottom: 2rem; color: #555;">Our Clinic has been relocated to the new address at City and Land Megaplaza. We look forward to welcoming you.</p>
+                    
+                    <div class="location-detail">
+                        <span class="material-icons-round">location_on</span>
+                        <div>
+                            <h3>Clinic Address</h3>
+                            <p>
+                                604 City and Land Megaplaza,<br>
+                                Garnet Rd. cor. ADB Avenue,<br>
+                                Ortigas Center, Pasig City,<br>
+                                Metro Manila, Philippines
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="location-detail">
+                        <span class="material-icons-round">schedule</span>
+                        <div>
+                            <h3>Clinic Hours</h3>
+                            <p>Mon - Sun: 9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button" onclick="openGeneralModal()" style="margin-top: 1rem; width: auto; display: inline-block;">Request Appointment</button>
                 </div>
+
+                <!-- gugel map -->
+                <div class="map-container-large">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=604%20City%20and%20Land%20Megaplaza%2C%20Garnet%20Rd.%20cor.%20ADB%20Avenue%2C%20Ortigas%20Center%2C%20Pasig%20City%2C%20Metro%20Manila&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        title="SynerQi Clinic Location Map">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Appointment-->
+        <section class="appointment-banner fade-in">
+            <div class="appointment-content">
+                <h2>Book for an appointment today!</h2>
+                <p>Stay safe and be healthy! Secure your slot now.</p>
                 
-                <div class="filter-tabs" role="tablist">
-                    <button class="filter-btn active" data-filter="all" role="tab" tabindex="0">All</button>
-                    <button class="filter-btn" data-filter="medical" role="tab" tabindex="0">Medical</button>
-                    <button class="filter-btn" data-filter="modalities" role="tab" tabindex="0">TCM Modalities</button>
-                    <button class="filter-btn" data-filter="rehab" role="tab" tabindex="0">Rehabilitation</button>
-                    <button class="filter-btn" data-filter="pain" role="tab" tabindex="0">Pain Management</button>
-                    <button class="filter-btn filter-reset" id="resetFilters" title="Clear all filters" style="display:none; color: #d32f2f; border-color: #d32f2f;">
-                        <span class="material-icons-round" style="font-size: 14px; vertical-align: middle;">close</span> Reset
-                    </button>
-                </div>
+                <span class="contact-phones">
+                    0995 046 1097 / 0931 129 7716
+                </span>
+                
+                <button class="btn btn-secondary" onclick="openGeneralModal()" style="background: white; color: #008080; border: none; padding: 1rem 2.5rem; font-weight: 700; border-radius: 50px; cursor: pointer; transition: transform 0.2s;">
+                    Book Online Now
+                </button>
             </div>
-            
-            <div id="filterStatus" class="filter-feedback">
-                Currently viewing: <strong>All Services</strong>
-            </div>
-        </div>
-
-        <div class="services-container">
-            <div class="service-card fade-in-item" data-category="medical">
-                <div class="card-image"><img src="images/tcm-850x567 (1).jpg" alt="Consultation" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">medical_services</span> Consultation</h3>
-                            <span class="price">₱1,000</span>
-                        </div>
-                        <ul class="bullets"><li>Pulse</li><li>Diagnose</li></ul>
-                        <button class="btn-book" onclick="openModal('Consultation', '₱1,000', 'images/tcm-850x567 (1).jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Traditional Chinese Medicine TCM Diagnose involves Observation, Hearing & Smelling, Inquiring and Pulsing Methods.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="medical">
-                <div class="card-image"><img src="images/Acupuncture-850x567.jpeg" alt="Acupuncture" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">healing</span> Acupuncture</h3>
-                            <span class="price">₱1,500+</span>
-                        </div>
-                        <ul class="bullets"><li>Promotes Meridian Channel Flow</li><li>Balance QI of the Body</li><li>Replenish QI of the Body</li></ul>
-                        <button class="btn-book" onclick="openModal('Acupuncture', '₱1,500+', 'images/Acupuncture-850x567.jpeg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Acupuncture promotes Meridian channel flow, balance qi and replenish qi of the body through the natural way, its effect has been recognized by WHO. Best for acute and chronic pain, also great remedy for internal medicines.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="medical">
-                <div class="card-image"><img src="images/Herbal-Remedies-850x567 (1).jpg" alt="Herbal Remedies" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">local_florist</span> Herbal Remedies</h3>
-                            <span class="price">₱200 - ₱300 /day</span>
-                        </div>
-                        <ul class="bullets"><li>Prescription Herbs</li></ul>
-                        <button class="btn-book" onclick="openModal('Herbal Remedies', '₱200 - ₱300 /day', 'images/Herbal-Remedies-850x567 (1).jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Prescription of Herbs (Powder/Capsules). Traditional Chinese medicine prescription of herbs (powder/capsules) are customized to individual. Easy & convenient to prepare and consume. With GMP certified standard.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="modalities">
-                <div class="card-image"><img src="images/Cupping-850x567.jpg" alt="Cupping" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">radio_button_unchecked</span> Cupping</h3>
-                            <span class="price">₱1,000</span>
-                        </div>
-                        <ul class="bullets"><li>Detox</li><li>Slimming</li><li>Pain</li></ul>
-                        <button class="btn-book" onclick="openModal('Cupping', '₱1,000', 'images/Cupping-850x567.jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Traditional Chinese medicine way of Detox / Slimming / Pain Management. Relaxing taut muscles by expelling wind and heat of the body. Promotes circulation and reduce pain.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="modalities">
-                <div class="card-image"><img src="images/tuina.jpg" alt="Tuina" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">front_hand</span> Tuina</h3>
-                            <span class="price">₱1,000 / ₱1,500</span>
-                        </div>
-                        <ul class="bullets"><li>De-stress Muscles</li><li>Meridian Acupressure Points Massage</li></ul>
-                        <button class="btn-book" onclick="openModal('Tuina', '₱1,000 / ₱1,500', 'images/tuina.jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Meridian Acupressure Points Massage is the most effective way to de-stress the muscles and mind, thus promotes better sleep! Acupuncture points are being stimulated which helps qi flows better, thus bring better circulation of blood and strengthen mind and body.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="modalities">
-                <div class="card-image"><img src="images/guasha.jpg" alt="Guasha" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">spa</span> Guasha</h3>
-                            <span class="price">₱1,200</span>
-                        </div>
-                        <ul class="bullets"><li>Body Detox</li><li>Facial Lifting</li></ul>
-                        <button class="btn-book" onclick="openModal('Guasha', '₱1,200', 'images/guasha.jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Body Detox / Facial Lifting Guasha. Traditional Chinese medicine Body Detox Guasha is for detoxing and promoting lymphatic drainage. Facial lifting Guasha is able to detox and promote elasticity of face muscles, create lifting effect, reduce wrinkles and enhance radiance.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="rehab">
-                <div class="card-image"><img src="images/rehab.jpeg" alt="Rehabilitation" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">accessibility</span> Rehabilitation</h3>
-                            <span class="price">₱1,000</span>
-                        </div>
-                        <ul class="bullets"><li>Active Approach</li><li>Progressive Exercise</li></ul>
-                        <button class="btn-book" onclick="openModal('Rehabilitation', '₱1,000', 'images/rehab.jpeg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Our Active Approach incorporates tailored, progressive exercise programs, to patient management sets us apart and enhances positive outcomes for our patients.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="rehab">
-                <div class="card-image"><img src="images/3d_acu.jpg" alt="3D Acu" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">3d_rotation</span> 3D Acu & Myofascial Pain Management</h3>
-                            <span class="price">₱4,000 - ₱7,500</span>
-                        </div>
-                        <ul class="bullets"><li>Structural rehabilitation</li><li>Manual Therapies</li><li>Restore Mobility</li></ul>
-                        <button class="btn-book" onclick="openModal('3D Acu & Myofascial Pain Management', '₱4,000 - ₱7,500', 'images/3d_acu.jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Dr Kim Ki Ho from Korea is a specialist in 3D structure Myofascial Chain Rehab therapy, this includes the combination of acupuncture and manual therapies remedies to restore, improve or maintain the movement and functioning of the human body for better mobility, coordination and pain management.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="rehab">
-                <div class="card-image"><img src="images/physical_exercise.jpg" alt="Physical Exercise" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">fitness_center</span> Physical Exercise</h3>
-                            <span class="price">₱600 - ₱800</span>
-                        </div>
-                        <ul class="bullets"><li>Restore Function</li><li>Muscle Injury Recovery</li><li>Stroke Recovery</li></ul>
-                        <button class="btn-book" onclick="openModal('Physical Exercise', '₱600 - ₱800', 'images/physical_exercise.jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Our Physical Exercise Therapy helps to restore the optimal function to people with injuries to the muscles, bones, tissues or nervous system, including those with stroke to enhance and restore their functional ability and quality of life.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="pain">
-                <div class="card-image"><img src="images/3d_acu.jpg" alt="3D Acu Pain" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">sick</span> 3D Acu & Myofascial Pain Management</h3>
-                            <span class="price">₱4,000 - ₱7,500</span>
-                        </div>
-                        <ul class="bullets"><li>Structural rehabilitation</li><li>Manual Therapies</li><li>Restore Mobility</li></ul>
-                        <button class="btn-book" onclick="openModal('3D Acu & Myofascial Pain Management', '₱4,000 - ₱7,500', 'images/3d_acu.jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Specialized Pain Management using 3D structure Myofascial Chain Rehab therapy. Combines acupuncture and manual therapies to restore movement and functioning of the human body.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="pain">
-                <div class="card-image"><img src="images/Acupuncture-850x567.jpeg" alt="Acupuncture Pain" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">healing</span> Acupuncture</h3>
-                            <span class="price">₱1,500+</span>
-                        </div>
-                        <ul class="bullets"><li>Promotes Meridian Channel Flow</li><li>Balance QI of the Body</li><li>Replenish QI of the Body</li></ul>
-                        <button class="btn-book" onclick="openModal('Acupuncture', '₱1,500+', 'images/Acupuncture-850x567.jpeg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">The efficacy of Acupuncture treatment can provide pain relief but also the improvement of blood circulation for achieving overall balance of your physical condition.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="service-card fade-in-item" data-category="pain">
-                <div class="card-image"><img src="images/guasha.jpg" alt="Cupping" loading="lazy" onerror="this.src='images/tcm-850x567 (1).jpg'"></div>
-                <div class="card-content-wrapper">
-                    <button class="info-toggle" title="View Details" aria-label="View Service Details" aria-expanded="false" role="button"><span class="material-icons-round">info</span></button>
-                    <div class="content-slide slide-summary active">
-                        <div class="header-group">
-                            <h3 class="service-title"><span class="material-icons-round title-icon">accessibility_new</span> Cupping / Guasha</h3>
-                            <span class="price">₱1,000 / ₱1,200</span>
-                        </div>
-                        <ul class="bullets"><li>Resolve Pain Symptoms</li><li>Free Up Mobility</li><li>Treat Inflammation</li></ul>
-                        <button class="btn-book" onclick="openModal('Cupping/Guasha', '₱1,000 / ₱1,200', 'images/guasha.jpg')" role="button">Book Now</button>
-                    </div>
-                    <div class="content-slide slide-detail">
-                        <div class="header-group"><h3>About This Service</h3></div>
-                        <p class="detail-text">Guasha can be effective for resolving pain symptoms and freeing up mobility for frozen shoulder. It can also be use to treat emerging inflammatory condition such as flulike symptoms or bronchial and respiratory illnesses.</p>
-                        <button class="btn-back" aria-label="Go back to service summary" role="button"><span class="material-icons-round">arrow_back</span> Back</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="noResults" style="display:none; text-align:center; padding: 3rem; color: #666;">
-            <p>No treatments found. Try a different category.</p>
-        </div>
+        </section>
     </main>
 
     <footer id="contact" class="fade-in">
         <div class="footer-content">
+            <!-- Socials -->
             <div class="footer-column">
                 <div class="logo">
                     <img src="images/synerqi footer logo.png" alt="SynerQi Logo">
@@ -327,6 +148,7 @@
                 </div>
             </div>
 
+            <!-- Navigation -->
             <div class="footer-column">
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
@@ -366,7 +188,8 @@
     <button id="scrollToTopBtn" title="Go to top">
         <span class="material-icons-round">arrow_upward</span>
     </button>
-    
+
+    <!-- Popup -->
     <div id="bookingModal" class="modal-overlay">
         <div class="modal-wrapper">
             <div class="mobile-modal-header">
@@ -375,11 +198,11 @@
             </div>
             <div class="modal-grid">
                 <div class="modal-context">
-                    <img id="modalImg" src="" alt="Service">
+                    <img id="modalImg" src="images/tcm-850x567 (1).jpg" alt="Service">
                     <div class="modal-context-info">
                         <h5>You are booking:</h5>
-                        <h2 id="modalTitle">Service Name</h2>
-                        <span id="modalPrice" class="modal-price">₱0</span>
+                        <h2 id="modalTitle">General Consultation</h2>
+                        <span id="modalPrice" class="modal-price">Select a service</span>
                     </div>
                 </div>
                 <div class="modal-form-section">
@@ -388,7 +211,6 @@
                         <span class="material-icons-round close-icon-desktop" onclick="closeModal()">close</span>
                     </div>
                     <form id="modalBookingForm">
-                        
                         <div class="form-group">
                             <label>Select Service</label>
                             <select id="serviceSelect" required onchange="updateModalContext(this)">
@@ -399,7 +221,7 @@
                                 <option value="Tuina" data-price="₱1,000 / ₱1,500" data-img="images/tuina.jpg">Tuina</option>
                                 <option value="Guasha" data-price="₱1,200" data-img="images/guasha.jpg">Guasha</option>
                                 <option value="Rehabilitation" data-price="₱1,000" data-img="images/rehab.jpeg">Rehabilitation</option>
-                                <option value="3D Acu & Myofascial Pain Management" data-price="₱4,000 - ₱7,500" data-img="images/Pain Management.jpg">3D Acu & Myofascial Pain Management</option>
+                                <option value="3D Acu & Myofascial Pain Management" data-price="₱4,000 - ₱7,500" data-img="images/Pain Management.jpg">3D Acu & Myofascial Pain Mgmt</option>
                                 <option value="Physical Exercise" data-price="₱600 - ₱800" data-img="images/Physical-Exercise.jpeg">Physical Exercise</option>
                             </select>
                         </div>
@@ -436,7 +258,81 @@
     </div>
 
     <script>
-        // Scroll To Top 
+        // Hamburger Menu 
+        document.getElementById('hamburgerMenu').onclick = function() {
+            document.getElementById('mainNav').classList.toggle('open');
+            document.getElementById('ctaButton').classList.toggle('open');
+        }
+
+        // Fade In Animation 
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 80) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        window.addEventListener('scroll', fadeInOnScroll);
+        fadeInOnScroll(); 
+
+        // pop up
+        const modal = document.getElementById('bookingModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalPrice = document.getElementById('modalPrice');
+        const serviceSelect = document.getElementById('serviceSelect');
+        const dateInput = document.getElementById('bookingDate');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+
+        // scrollbar width
+        function getScrollbarWidth() {
+            return window.innerWidth - document.documentElement.clientWidth;
+        }
+
+        window.openGeneralModal = function() {
+            const scrollbarWidth = getScrollbarWidth();
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
+
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+            document.body.style.overflow = 'hidden';
+            updateModalContext(serviceSelect);
+        }
+
+        window.closeModal = function() {
+            modal.classList.remove('active');
+            setTimeout(() => { 
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                document.body.style.paddingRight = '0px';
+            }, 300);
+        }
+
+        function updateModalContext(selectElement) {
+            const selectedOption = selectElement.options[selectElement.selectedIndex];
+            modalTitle.innerText = selectedOption.value;
+            modalPrice.innerText = selectedOption.getAttribute('data-price');
+            modalImg.src = selectedOption.getAttribute('data-img');
+        }
+
+        modal.addEventListener('click', e => { if(e.target === modal) closeModal(); });
+        
+        // Form Submission
+        document.getElementById('modalBookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const service = document.getElementById('serviceSelect').value;
+            const name = document.getElementById('userName').value;
+            const date = document.getElementById('bookingDate').value;
+            
+            window.location.href = `mailto:emantablizo520@gmail.com?subject=Booking: ${service}&body=Name: ${name}%0D%0ADate: ${date}`;
+            closeModal();
+        });
+
+        //Scroll To Top 
         const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
         window.addEventListener("scroll", () => {
@@ -453,199 +349,6 @@
                 behavior: "smooth"
             });
         });
-
-        document.getElementById('hamburgerMenu').onclick = function() {
-            document.getElementById('mainNav').classList.toggle('open');
-            document.getElementById('ctaButton').classList.toggle('open');
-        };
-
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const fadeInOnScroll = () => {
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                if (elementTop < windowHeight - 80) {
-                    element.classList.add('visible');
-                }
-            });
-        };
-        window.addEventListener('scroll', fadeInOnScroll);
-        fadeInOnScroll(); 
-
-        const filterBtns = document.querySelectorAll('.filter-btn:not(#resetFilters)');
-        const resetBtn = document.getElementById('resetFilters');
-        const searchInput = document.getElementById('serviceSearch');
-        const cards = document.querySelectorAll('.service-card');
-        const noResults = document.getElementById('noResults');
-        const filterStatus = document.getElementById('filterStatus');
-
-        function updateFeedback() {
-            const activeBtn = document.querySelector('.filter-btn.active');
-            const category = activeBtn.getAttribute('data-filter');
-            const term = searchInput.value.toLowerCase();
-            let catText = category === 'all' ? 'All Services' : category.charAt(0).toUpperCase() + category.slice(1);
-            let searchText = term ? ` + keyword "${term}"` : '';
-            filterStatus.innerHTML = `Currently viewing: <strong>${catText}${searchText}</strong>`;
-            
-            if(category !== 'all' || term !== '') {
-                resetBtn.style.display = 'inline-flex';
-            } else {
-                resetBtn.style.display = 'none';
-            }
-        }
-
-        function filterItems() {
-            const category = document.querySelector('.filter-btn.active').getAttribute('data-filter');
-            const term = searchInput.value.toLowerCase();
-            let visibleCount = 0;
-            cards.forEach(card => {
-                const itemCat = card.getAttribute('data-category');
-                
-                const title = card.querySelector('.service-title')?.innerText.toLowerCase() || '';
-                const bullets = card.querySelector('.bullets')?.innerText.toLowerCase() || '';
-                const details = card.querySelector('.detail-text')?.innerText.toLowerCase() || '';
-                
-                const text = title + " " + bullets + " " + details;
-
-                const matchesCategory = (category === 'all' || itemCat === category);
-                const matchesSearch = text.includes(term);
-                
-                if (matchesCategory && matchesSearch) {
-                    card.style.display = 'flex';
-                    card.classList.remove('fade-in-item');
-                    void card.offsetWidth; 
-                    card.classList.add('fade-in-item');
-                    visibleCount++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-            updateFeedback();
-        }
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                filterItems();
-            });
-        });
-        
-        resetBtn.addEventListener('click', () => {
-            searchInput.value = '';
-            filterBtns.forEach(b => b.classList.remove('active'));
-            document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
-            filterItems();
-        });
-
-        searchInput.addEventListener('input', filterItems);
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') btn.click();
-            });
-        });
-
-        document.querySelectorAll('.service-card').forEach(card => {
-            const toggleBtn = card.querySelector('.info-toggle');
-            const backBtn = card.querySelector('.btn-back');
-            const summarySlide = card.querySelector('.slide-summary');
-            const detailSlide = card.querySelector('.slide-detail');
-
-            function toggleSlides() {
-                const isSummaryActive = summarySlide.classList.contains('active');
-                
-                if (isSummaryActive) {
-                    summarySlide.classList.remove('active');
-                    detailSlide.classList.add('active');
-                    toggleBtn.setAttribute('aria-expanded', 'true');
-                    toggleBtn.style.opacity = '0'; toggleBtn.style.pointerEvents = 'none';
-                } else {
-                    detailSlide.classList.remove('active');
-                    summarySlide.classList.add('active');
-                    toggleBtn.setAttribute('aria-expanded', 'false');
-                    toggleBtn.style.opacity = '1'; toggleBtn.style.pointerEvents = 'auto';
-                }
-            }
-            toggleBtn.addEventListener('click', toggleSlides);
-            backBtn.addEventListener('click', toggleSlides);
-        });
-
-        // pop ups
-        const modal = document.getElementById('bookingModal');
-        const modalImg = document.getElementById('modalImg');
-        const modalTitle = document.getElementById('modalTitle');
-        const modalPrice = document.getElementById('modalPrice');
-        const serviceSelect = document.getElementById('serviceSelect'); 
-        const dateInput = document.getElementById('bookingDate');
-        const today = new Date().toISOString().split('T')[0];
-        dateInput.setAttribute('min', today);
-
-        function getScrollbarWidth() {
-            return window.innerWidth - document.documentElement.clientWidth;
-        }
-
-        function updateModalContext(selectElement) {
-            const selectedOption = selectElement.options[selectElement.selectedIndex];
-            modalTitle.innerText = selectedOption.value;
-            modalPrice.innerText = selectedOption.getAttribute('data-price');
-            modalImg.src = selectedOption.getAttribute('data-img');
-        }
-        window.updateModalContext = updateModalContext;
-
-        window.openModal = function(title, price, imgSrc) {
-            const scrollbarWidth = getScrollbarWidth();
-            document.body.style.paddingRight = `${scrollbarWidth}px`;
-
-            for(let i = 0; i < serviceSelect.options.length; i++) {
-                if (serviceSelect.options[i].value === title) {
-                    serviceSelect.selectedIndex = i;
-                    break;
-                }
-            }
-            
-            updateModalContext(serviceSelect);
-
-            modal.style.display = 'flex';
-            setTimeout(() => { modal.classList.add('active'); }, 10);
-            document.body.style.overflow = 'hidden';
-        }
-
-        window.openGeneralModal = function() {
-             serviceSelect.selectedIndex = 0; 
-             window.openModal('Consultation', '₱1,000', 'images/tcm-850x567 (1).jpg');
-        }
-
-        window.closeModal = function() {
-            modal.classList.remove('active');
-            setTimeout(() => { 
-                modal.style.display = 'none'; 
-                document.body.style.overflow = 'auto';
-                document.body.style.paddingRight = '0px';
-            }, 300);
-        }
-
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) closeModal();
-        });
-
-        document.getElementById('modalBookingForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const service = document.getElementById('serviceSelect').value;
-            const name = document.getElementById('userName').value;
-            const email = document.getElementById('userEmail').value;
-            const phone = document.getElementById('userPhone').value;
-            const date = document.getElementById('bookingDate').value;
-            const time = document.getElementById('bookingTime').value;
-            const subject = `Booking Request: ${service} - ${name}`;
-            const body = `Hello SynerQi,%0D%0A%0D%0AI would like to book an appointment.%0D%0A%0D%0ADetails:%0D%0AService: ${service}%0D%0AName: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0ADate: ${date}%0D%0ATime: ${time}`;
-            window.location.href = `mailto:emantablizo520@gmail.com?subject=${subject}&body=${body}`;
-            closeModal();
-        });
-        
-        // filter 
-        filterItems();
     </script>
 </body>
 </html>
