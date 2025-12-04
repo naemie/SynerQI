@@ -39,7 +39,7 @@
     background-size: cover;
     background-position: center;
     z-index: 0;
-    animation: kenBurns 20s ease-out infinite alternate;
+    animation: kenBurns 10s ease-out infinite alternate;
 }
 
 .about-hero::after {
